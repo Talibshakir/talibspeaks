@@ -3,48 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You</title>
+  <title>Talib Speaks | Turning Struggles into Strengths</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
-    .message-box {
+    a { text-decoration: none; }
+
+    /* Header */
+    header {
+      background: #111;
+      color: white;
+      padding: 1.2rem;
       text-align: center;
-      background: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
-    .message-box h1 {
-      color: green;
-      margin-bottom: 20px;
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #111, #333);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
     }
-    .message-box a {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      background: #000;
-      color: #fff;
-      padding: 12px 20px;
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      border: 4px solid #fff;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* About */
+    .about {
+      background: white;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* Contact */
+    .contact {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1rem;
     }
-    .message-box a:hover {
+    button {
+      padding: 1rem;
+      background: #111;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
       background: #444;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #f39c12;
     }
   </style>
 </head>
 <body>
-  <div class="message-box">
-    <h1>✅ Thank You!</h1>
-    <p>Your message has been sent successfully. I’ll get back to you soon.</p>
-    <a href="index.html">⬅ Back to Home</a>
-  </div>
+  <header>
+    Talib Speaks
+  </header>
+
+  <section class="hero">
+    <img src="https://via.placeholder.com/180" alt="Talib Shakir headshot">
+    <h1>Turning Struggles into Strengths</h1>
+    <p>Motivational storytelling, transformation, and purpose — empowering people to rise above challenges and build a better future.</p>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Talib Shakir. My journey is one of resilience and growth. From overcoming challenges to leading with purpose, I share my story to help others turn obstacles into opportunities. Through speaking, coaching, and storytelling, I inspire individuals and organizations to embrace education, transformation, and lasting impact.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Talib Speaks. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://youtube.com/@talibspeaks" target="_blank">YouTube</a> |
+      <a href="https://instagram.com/talibspeaks" target="_blank">Instagram</a>
+    </div>
+  </footer>
 </body>
 </html>
